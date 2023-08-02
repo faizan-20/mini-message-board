@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  a(href='/') Home 
+  br
+  a(href='/new') New
+  h1= title 
+
+  each val in messages ? messages: []
+    p #{val.user}: #{val.text}
+    p= val.added

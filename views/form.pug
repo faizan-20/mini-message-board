@@ -1,0 +1,25 @@
+extends layout 
+
+block content
+    a(href='/') Home 
+    br
+    a(href='/new') New
+    h1 Write your message 
+    form(
+        method='POST'
+        action='/new'
+    )
+        input(
+            type='text'
+            placeholder='user'
+            name='user'
+        )
+        input(
+            type='text'
+            placeholder='message'
+            name='message'
+        )
+        input(
+            type='submit'
+            name='submit'
+        )
